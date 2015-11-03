@@ -1,0 +1,14 @@
+Output file for running ticket.o
+
+Creating thread 1
+Creating thread 2
+final value of count = 4000000
+Creating thread 1
+Creating thread 2
+final value of count = 4000000
+Creating thread 1
+Creating thread 2
+final value of count = 4000000
+Creating thread 1
+Creating thread 2
+final value of count = 4000000

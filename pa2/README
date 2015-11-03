@@ -1,0 +1,23 @@
+Sung Yan Chao
+CS 361 PA 2
+
+Problem 1
+---------
+Files
+- makefile : file that has spin options, compiles pan.c to pan, runs pan, and cleans
+- ticket.pml : Promela source code for ticket locks
+- pan_results.txt : Output file from running pan file
+
+Problem 2
+---------
+Files
+- makefile : complies ticket.c and runs ticket.o
+- ticket.c : C source code for ticket locks
+- output.txt : Output file from running ticket.o 4 times
+
+Problem 3
+---------
+Files
+- makefile : file that has spin options, compiles pan.c to pan, runs pan, and cleans
+- mcs.pml : Promela source code for mcs locks
+- mcs_output.txt : Output file from running pan file

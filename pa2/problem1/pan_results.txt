@@ -1,0 +1,42 @@
+warning: for p.o. reduction to be valid the never claim must be stutter-invariant
+(never claims generated from LTL formulae are stutter-invariant)
+error: max search depth too small
+Depth=    9999 States=    1e+06 Transitions= 1.99e+06 Memory=   182.147	t=     2.28 R=   4e+05
+Depth=    9999 States=    2e+06 Transitions= 3.99e+06 Memory=   235.565	t=     4.55 R=   4e+05
+Depth=    9999 States=    3e+06 Transitions= 5.99e+06 Memory=   288.983	t=     6.81 R=   4e+05
+Depth=    9999 States=    4e+06 Transitions= 7.99e+06 Memory=   342.401	t=     9.01 R=   4e+05
+
+(Spin Version 6.2.7 -- 2 March 2014)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+ (never_0)
+	assertion violations	+ (if within scope of claim)
+	acceptance   cycles 	+ (fairness disabled)
+	invalid end states	- (disabled by never claim)
+
+State-vector 48 byte, depth reached 9999, errors: 0
+  4178331 states, stored
+  4170002 states, matched
+  8348333 transitions (= stored+matched)
+        0 atomic steps
+hash conflicts:    286478 (resolved)
+
+Stats on memory usage (in Megabytes):
+  302.842	equivalent memory usage for states (stored*(State-vector + overhead))
+  223.505	actual memory usage for states (compression: 73.80%)
+         	state-vector as stored = 28 byte + 28 byte overhead
+  128.000	memory used for hash table (-w24)
+    0.534	memory used for DFS stack (-m10000)
+  351.874	total actual memory usage
+
+
+unreached in proctype ticketlock
+	ticket.pml:26, state 12, "-end-"
+	(1 of 12 states)
+unreached in claim never_0
+	ticket.pml.nvr:10, state 10, "-end-"
+	(1 of 10 states)
+
+pan: elapsed time 9.43 seconds
+pan: rate 443089.18 states/second
